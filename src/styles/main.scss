@@ -30,15 +30,21 @@ body {
     color: var(--text);
     display: flex;
     flex-direction: column;
-    align-items: center;
     margin: 0;
-    padding-top: 5rem;
 
     @supports (scroll-behavior: smooth) {
         scroll-behavior: smooth;
     }
 
+    header {
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        padding: 1rem;
+    }
+
     main {
+        align-self: center;
         display: flex;
         flex-direction: column;
         text-align: center;
