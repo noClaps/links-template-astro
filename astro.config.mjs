@@ -7,6 +7,5 @@ import sitemap from "@astrojs/sitemap";
 // https://astro.build/config
 export default defineConfig({
   site: "https://noClaps.github.io",
-  base: "/links-template-astro",
   integrations: [sitemap(), critters(), compress()]
 });
