@@ -1,0 +1,75 @@
+// Colors
+body.dark {
+    --bg: #343a40;
+    --text: #f1f3f5;
+}
+
+body.light {
+    --bg: #f8f9fa;
+    --text: #343a40;
+}
+
+// Font
+@import url("https://rsms.me/inter/inter.css");
+
+html {
+    font-family: "Inter", sans-serif;
+
+    @supports (font-variation-settings: normal) {
+        font-family: "Inter var", sans-serif;
+    }
+}
+
+// Styles
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding-top: 5rem;
+
+    @supports (scroll-behavior: smooth) {
+        scroll-behavior: smooth;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        max-width: 88vw;
+        width: 64rem;
+
+        img {
+            border-radius: 1.5rem;
+            box-shadow: 0 0.5rem 0 rgba(0, 0, 0, 0.15);
+            width: 12rem;
+            align-self: center;
+        }
+
+        h1 {
+            font-family: "Patua One", serif;
+            font-weight: normal;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin: 0.5rem;
+            font-size: 1.25rem;
+
+            svg {
+                fill: currentColor;
+                display: inline-block;
+                height: 1.25rem;
+                vertical-align: -10%;
+                margin-right: 0.25rem;
+            }
+        }
+    }
+}

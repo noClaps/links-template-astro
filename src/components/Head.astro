@@ -1,0 +1,18 @@
+---
+const {title, description} = Astro.props
+---
+
+<meta charset="utf-8" />
+<link rel="icon" type="image/svg+xml" href="/icon/favicon.svg" />
+<meta name="viewport" content="width=device-width" />
+<title>{title}</title>
+<meta name="description" content={description}>
+<script>
+    if (
+        !window.matchMedia("(prefers-color-scheme: dark)").matches
+    ) {
+        document.body.classList.add("light");
+    } else {
+        document.body.classList.add("dark");
+    }
+</script>
